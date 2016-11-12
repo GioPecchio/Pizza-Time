@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    
+    <title>Pizza Time</title>
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="cover.css" rel="stylesheet">
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <h1 class="center "id="title"><i class="material-icons" id="matico">local_pizza</i><i class="material-icons" id="matico">access_time</i></h1>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+
+  <footer>
+    <p>Made with <button id="mutebtn"><i class="fa fa-heart" id="heart" aria-hidden="true"></i></button>  in London.</p>
+    <div>
+      <video autoplay controls loop id="bgvid">
+        <source src="PizzaTime.mp4" type="video/mp4">
+      </video>
+      <script>
+      var mutebtn;
+      intitializePlayer()
+
+      function intitializePlayer(){
+          vid = document.getElementById("bgvid");
+          mutebtn = document.getElementById("mutebtn");
+          mutebtn.addEventListener("click",vidmute,false);
+      }
+      function vidmute(){ 
+          if(vid.muted){
+              vid.muted = false;
+              mutebtn.innerHTML = '<i class="fa fa-heart" id="heart" aria-hidden="true">';
+          } else {
+              vid.muted = true;
+              mutebtn.innerHTML = '<i class="fa fa-heart" id="heart" aria-hidden="true">';
+          }
+      }
+      </script>
+    </div>
+  </footer>
+</html>
