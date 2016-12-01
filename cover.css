@@ -52,17 +52,18 @@ body {
 
 body {
   color: #fff;
-  text-align: center;
+  text-align: center;;
+  right: 25px;
   font-family: "Andale Mono", monospace;
 }
 
 header{
   z-index: 1;
   position: fixed;
-  top: 0;
-  width:100%;
+  top: 5px;
+  left: 150px;
   color: #fff;
-  text-align: center;
+  text-align: left;
 }
 
 #logo{
