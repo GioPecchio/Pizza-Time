@@ -33,12 +33,13 @@ a:hover {
 #fb-share{
   position:fixed;
   right: 25px;
-  bottom:3px;
+  bottom:2px;
   height:30px;
   background:#000;
   color: #fff;
   font-family: "Andale Mono", monospace;
   text-align: right;
+  text-decoration: none;
 }
 
 /*
