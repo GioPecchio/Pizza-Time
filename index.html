@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
-    
+
     <title>Pizza Time</title>
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -44,7 +44,8 @@
   </body>
 
   <footer>
-    <p>Made with <button id="mutebtn"><i class="fa fa-heart" id="heart" aria-hidden="true"></i></button>  in London.</p>
+    <span id="madewith">Made with <button id="mutebtn"><i class="fa fa-heart" id="heart" aria-hidden="true"></i></button>  in London.</span>
+    <a id="fb-share" class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.pizzatime.win%2F&amp;src=sdkpreparse">Share</a>
     <div>
       <video autoplay loop id="bgvid">
         <source src="PizzaTime.mp4" type="video/mp4">
@@ -58,7 +59,7 @@
           mutebtn = document.getElementById("mutebtn");
           mutebtn.addEventListener("click",vidmute,false);
       }
-      function vidmute(){ 
+      function vidmute(){
           if(vid.muted){
               vid.muted = false;
               mutebtn.innerHTML = '<i class="fa fa-heart" id="heart" aria-hidden="true">';

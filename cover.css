@@ -19,6 +19,27 @@ a:hover {
   border: 1px solid #fff;
 }
 
+#madewith{
+  position:fixed;
+  left: 25px;
+  bottom:5px;
+  height:30px;
+  background:#000;
+  color: #fff;
+  font-family: "Andale Mono", monospace;
+  text-align: left;
+}
+
+#fb-share{
+  position:fixed;
+  right: 25px;
+  bottom:3px;
+  height:30px;
+  background:#000;
+  color: #fff;
+  font-family: "Andale Mono", monospace;
+  text-align: right;
+}
 
 /*
  * Base structure
@@ -54,7 +75,7 @@ header{
   left: 30px;
 }
 
-video#bgvid { 
+video#bgvid {
     z-index: -1;
     position: fixed;
     top: 50%;
@@ -69,7 +90,7 @@ video#bgvid {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background: url(polina.jpg) no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
 #mutebtn{
@@ -88,21 +109,6 @@ video#bgvid {
 .cover .btn-lg {
   padding: 10px 20px;
   font-weight: bold;
-}
-
-/*
- * Footer
- */
-footer {
-  position:fixed;
-  left:0px;
-  bottom:5%;
-  height:30px;
-  width:100%;
-  background:#000;
-  color: #fff;
-  font-family: "Andale Mono", monospace;
-  text-align: center;
 }
 
 #heart {
